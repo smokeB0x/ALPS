@@ -2,7 +2,6 @@
 
 # A script for parcing the file newbatterystats from android smartphones
 # For now it only changes the "+" time with an actual date/time and outputs the list in a csv-type format
-# Made by NAE001 DPA Øst
 
 import re
 from datetime import datetime
