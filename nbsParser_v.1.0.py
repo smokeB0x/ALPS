@@ -2,7 +2,7 @@
 Changes the + time in the file into the actual datetime, removes lines demed irrelevant, and 
 writes the contents into a database
 
-Version: 1.9.2
+Version: 1.0
 Created: 19.01.23
 Last modified: 04.02.23
 """
