@@ -28,7 +28,7 @@ def explainer (_data):
         explanation = "camera in focus"
     elif re.search(r'\-camera', str(_data)):
         explanation = "camera out of focus"
-    elif re.search(r'\+screen', str(_data)):
+    elif re.search(r"['\"\[]\+screen['\"\],]", str(_data).replace(' ', '')):
         explanation = "screen on"
     elif re.search(r"['\"\[]\-screen['\"\],]", str(_data).replace(' ', '')):
         explanation = "screen off"
