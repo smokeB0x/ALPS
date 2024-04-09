@@ -30,9 +30,9 @@ def explainer (_data):
         explanation = "camera out of focus"
     elif re.search(r'\+screen', str(_data)):
         explanation = "screen on"
-    elif re.search(r'\-screen', str(_data)):
+    elif re.search(r"['\"\[]\-screen['\"\],]", str(_data).replace(' ', '')):
         explanation = "screen off"
-    elif re.search(r'\status=charging', str(_data)):
+    elif re.search(r'status=charging', str(_data)):
         explanation = "Charging started"
     else: 
         explanation = " "
