@@ -2,7 +2,7 @@
 A collection of scripts for parsing logfiles in android
 Version: 1.0
 
-Note: This is a work in progress, and this version is not ready to be used 
+Note: This is a work in progress, and this version may contain errors. Use at your own risk and verify your results.
 
 A program/collection of scripts for parsing and displaying log files from android.
 
