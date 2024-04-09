@@ -32,6 +32,8 @@ def explainer (_data):
         explanation = "screen on"
     elif re.search(r'\-screen', str(_data)):
         explanation = "screen off"
+    elif re.search(r'\status=charging', str(_data)):
+        explanation = "Charging started"
     else: 
         explanation = " "
     return explanation
